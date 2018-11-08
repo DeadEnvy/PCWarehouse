@@ -1,18 +1,4 @@
 <h1>Products</h1>
 
-<% @products_collection.each do |product| %>
-    <div class = "product">
-        <p>
-            <b>Name: </b> <%=link_to product.name, product%>
-        </p>
-        <p>
-            <b>Price: </b>  <%= product.price%>
-        </p>
-        <p>
-            <b>Item Type: </b> <%= product.item_type%>
-        </p>
-        <p>
-            <b>Quantity: </b> <%= product.quantity%>
-        </p>
-    </div>
-<% end %>
+
+<%= render @products_collection%>
