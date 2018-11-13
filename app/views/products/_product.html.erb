@@ -1,6 +1,10 @@
 <div class = "product">
     <h2>
-        <%=link_to product.name, product%>
+        <% if show_link %>
+            <%=link_to product.name, product%>
+        <% else %>
+            <%= product.name %>
+        <% end %>
     <h2>
     <% if product.image.present? %>
         <p>
@@ -11,10 +15,12 @@
     <p>
         <b>Price:</b> $<%= product.price%>
     </p>
-    <p>
-        <b>Item Type: </b> <%= product.item_type%>
-    </p>
-    <p>
-        <b>Quantity: </b> <%= product.quantity%>
-    </p>
+        <% if in_show %>
+           <p>
+                <b>Item Type: </b> <%= product.item_type%>
+            </p>
+            <p>
+                <b>Quantity: </b> <%= product.quantity%>
+            </p>
+        <% end %>
 </div>

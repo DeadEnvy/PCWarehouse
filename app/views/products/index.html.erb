@@ -1,4 +1,6 @@
 <h1>Products</h1>
 
 
-<%= render @products_collection%>
+<%= render partial: 'product', 
+           collection: @products_collection,
+           locals: { show_link: true, in_show: false} %>
