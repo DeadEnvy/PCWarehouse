@@ -39,7 +39,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'activeadmin'
 gem 'devise'
 gem 'carrierwave'
-#gem 'mini_magick'
+# gem 'rmagick'
+gem 'mini_magick'
+gem 'bootstrap-sass'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
