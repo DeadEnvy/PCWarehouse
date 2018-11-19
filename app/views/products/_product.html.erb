@@ -1,8 +1,11 @@
 <div class = "product">
     <h2>
+   
         <% if show_link %>
+         <%= paginate @products_collection%>
+         <break>
+         <break>
             <%=link_to product.name, product%>
-        
         <% end %>
     <h2>
     <% if product.image.present? %>
