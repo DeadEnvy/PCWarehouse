@@ -2,8 +2,7 @@
     <h2>
         <% if show_link %>
             <%=link_to product.name, product%>
-        <% else %>
-            <%= product.name %>
+        
         <% end %>
     <h2>
     <% if product.image.present? %>
