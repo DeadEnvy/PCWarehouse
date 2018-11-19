@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'mice/index'
   get 'about/index'
   get 'category/index'
   devise_for :admin_users, ActiveAdmin::Devise.config
