@@ -1,9 +1,9 @@
 <!-- Services -->
-    <section id="services">
-      <div class="container">
+<section id="services">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-           <h2 class="section-heading text-uppercase">Mice</h2>
+            <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Mice</h2>
             <h3 class="section-subheading text-muted">Your Computing Mice Needs.</h3>
             <div class="row text-center">
         <div class="col-md-4">
@@ -12,17 +12,17 @@
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
         </span>
         <p class="text-muted">
-         <ul>
+            <ul>
             <% @mice.each do |mouse| %>
                 <li> 
-                    <%= link_to mouse.name,  %> 
+                    <%= link_to mouse.name, mouse %> 
                 </li>
             <% end %>
-          </ul>
+            </ul>
         </p>
         </div>
-         </div>
+            </div>
         </div>
-      </div>
-      </div>
-    </section>
+        </div>
+    </div>
+</section>

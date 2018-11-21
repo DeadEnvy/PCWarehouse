@@ -1,5 +1,5 @@
 class MiceController < ApplicationController
   def index
-    @mice = Product.order(:name).where('item_type LIKE mouse')
+    @mice = Product.where(item_type: 'Mouse')
   end
 end
