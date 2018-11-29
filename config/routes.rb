@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :mice, only: [:index]
   resources :products, only: [:index, :show]
   root to: 'products#index'
+  resources :pages, only: [:show]
+  get ':permalink', to: 'pages#permalink'
 end
