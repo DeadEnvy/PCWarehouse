@@ -3,17 +3,17 @@ class PageController < ApplicationController
         @page = Page.find_by(permalink: params[:permalink])
         
         if @page.nil?
-        redirect_to root_path
+            redirect_to root_path
         else
-        render :show
+            render :show
         end
-        end
+    end
         
-        def home; end
+    def home; end
         
-        def show
+    def show
         @page = Page.find(params[:id])
-        end
-        
-        def about; end
+    end
+    
+    def about; end
 end
